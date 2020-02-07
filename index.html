@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 115 words)
+                    2 minutes read (About 337 words)
                 </span>
                 
                 
@@ -160,8 +160,9 @@
             
         </h1>
         <div class="content">
-            <h2 id="C-GettingStarted1"><a href="#C-GettingStarted1" class="headerlink" title="C++GettingStarted1"></a>C++GettingStarted1</h2><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="最小只有六级标题"><a href="#最小只有六级标题" class="headerlink" title="最小只有六级标题"></a>最小只有六级标题</h6><blockquote>
-<p>C++GettingStarted1<br>alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  462  22    :32:50<br> 5     pro1.cc<br>  6      alexyang@bogon  ~/Desktop/C++Learn  cc pro1.cc          ✔  463  22    :33:06<br>  7      alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  464  22    :33:25<br>  8     a.out   pro1.cc<br>  9      alexyang@bogon  ~/Desktop/C++Learn  ./a.out             ✔  465  22    :33:31<br> 10      alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  466  22    :34:13<br> 11     0<br>    </p>
+            <h1 id="C-GettingStarted1"><a href="#C-GettingStarted1" class="headerlink" title="C++GettingStarted1"></a><strong>C++GettingStarted1</strong></h1><p>当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.</p>
+<blockquote>
+<p>alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  462  22    :32:50<br> pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  cc pro1.cc          ✔  463  22    :33:06<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  464  22    :33:25<br>a.out   pro1.cc<br>alexyang@bogon  ~/Desktop/C++Learn  ./a.out             ✔  465  22    :33:31<br>alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  466  22    :34:13<br>0<br>alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  483  22:44:39<br>a.out   pro1    pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  484  22:45:14<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  485  22:45:34<br>0<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1            ✔  486  22:45:59<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  487  22:46:54<br> alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br>pro1.cc:3:2: error: use of undeclared identifier ‘std’<br> 26         std::cout &lt;&lt; “Hello, World!”&lt;&lt; std::endl;<br> 27         ^<br>pro1.cc:3:33: error: use of undeclared identifier ‘std’<br>        std::cout &lt;&lt; “Hello, World!”&lt;&lt; std::endl;<br>                                       ^<br>2 errors generated.<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc       1 ↵  489  22:50:23<br> alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  491  22:52:18<br>Hello, World!<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  492  22:52:26<br>0<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  493  22:52:52<br> alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  495  22:54:06<br>Hello, World!<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?         255 ↵  496  22:54:21<br>255</p>
 </blockquote>
 
         </div>

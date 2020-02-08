@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 342 words)
+                    5 minutes read (About 760 words)
                 </span>
                 
                 
@@ -156,11 +156,11 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/02/06/C-GettingStarted1/"></a>
+                <a class="has-link-black-ter" href="/2020/02/06/C-GettingStarted1/">C++GettingStarted1</a>
             
         </h1>
         <div class="content">
-            <p><strong>C++GettingStarted1</strong><br>1.当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.<br>g++ -o pro1 pro1.cc</p>
+            <p><strong>1.</strong>当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.<br>g++ -o pro1 pro1.cc</p>
 <blockquote>
 <p>alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  462  22    :32:50<br> pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  cc pro1.cc          ✔  463  22    :33:06<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  464  22    :33:25<br>a.out   pro1.cc<br>alexyang@bogon  ~/Desktop/C++Learn  ./a.out             ✔  465  22    :33:31<br>alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  466  22    :34:13<br>0<br>alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  483  22:44:39<br>a.out   pro1    pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  484  22:45:14<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  485  22:45:34<br>0<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1            ✔  486  22:45:59<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  487  22:46:54</p>
 </blockquote>
@@ -183,7 +183,51 @@ Hello, World!
  alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  495  22:54:06
 Hello, World!
  alexyang@bogon  ~/Desktop/C++Learn  echo $?         255 ↵  496  22:54:21
-255</code></pre>
+255</code></pre><p><strong>##2.</strong></p>
+<p>###1.Writing std::cout uses the scope operator (the :: operator) to say that we want to use the name cout that is defined in the namespace std.</p>
+<p>###2.The input operator (the &gt;&gt; operator) behaves analogously to the output operator.  Some Words : asterisk italicize  indent</p>
+<p>###3.Reading an Unkown Number of Input<br>    while (std::cin &gt;&gt; value)<br>    On Windows systems we enter an end-of-file by typing a control-z–hold down the Ctrl key and press z–followed by hittingeither the Enter or Return key. On UNIX systems, including on Mac OS X machines, end-of-file is usually control-d.</p>
+<p>###4.Headers from the standard library are enclosed in angle brackets (&lt; &gt;). Those that are not part of the library are enclosed in double quotes(“ “).</p>
+<p>###5.Member functions are sometimes referred to as methods.</p>
+<p>###6. $ addItems <infile>outfile    Assuming $ is the system prompt and our addition program has been compiled into an executablefile named addItems.exe(or addItems on UNIX systems), this command will read transactions from a file named infile and write its output to a file named outfile in the current directory.</infile></p>
+<pre><code>#include &lt;iostream&gt;
+#include &quot;Sales_item.h&quot;
+#include &lt;iostream&gt;
+#include &quot;Sales_item.h&quot;
+#include &lt;iostream&gt;
+#include &quot;Sales_item.h&quot;
+
+#include &lt;iostream&gt;
+#include &quot;Sales_item.h&quot;
+
+int main() 
+{
+    Sales_item total; // variable to hold data for the next transaction
+
+    // read the first transaction and ensure that there are data to process
+    if (std::cin &gt;&gt; total) {
+        Sales_item trans; // variable to hold the running sum
+    // read and process the remaining transactions
+    while (std::cin &gt;&gt; trans) {
+            // if we&apos;re still processing the same book
+        if (total.isbn() == trans.isbn()) 
+        total += trans; // update the running total 
+        else {              
+            // print results for the previous book 
+        std::cout &lt;&lt; total &lt;&lt; std::endl;  
+        total = trans;  // total now refers to the next book
+        }
+        }
+    std::cout &lt;&lt; total &lt;&lt; std::endl; // print the last transaction
+    } else {
+    // no input! warn the user
+    std::cerr &lt;&lt; &quot;No data?!&quot; &lt;&lt; std::endl;
+    return -1;  // indicate failure
+    }
+
+    return 0;
+}</code></pre><p>Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出<br>在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %</p>
+
         </div>
         
         
@@ -581,7 +625,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Posts
+                        Entradas
                     </p>
                     <p class="title has-text-weight-normal">
                         5
@@ -591,7 +635,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categories
+                        Categorias
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -601,7 +645,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tags
+                        Etiquetas
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -611,7 +655,7 @@ blog目录下
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
-                Follow</a>
+                SEGUIR</a>
         </div>
         
         
@@ -698,7 +742,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categories
+                Categorias
             </h3>
             <ul class="menu-list">
             
@@ -716,21 +760,21 @@ blog目录下
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Recientes
         </h3>
         
         <article class="media">
             
             <a href="/2020/02/06/C-GettingStarted1/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt>
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="C++GettingStarted1">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-06T15:46:23.000Z">2020-02-06</time></div>
-                    <a href="/2020/02/06/C-GettingStarted1/" class="has-link-black-ter is-size-6"></a>
+                    <a href="/2020/02/06/C-GettingStarted1/" class="has-link-black-ter is-size-6">C++GettingStarted1</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -822,7 +866,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -868,7 +912,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -892,21 +936,21 @@ blog目录下
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Recientes
         </h3>
         
         <article class="media">
             
             <a href="/2020/02/06/C-GettingStarted1/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt>
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="C++GettingStarted1">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-06T15:46:23.000Z">2020-02-06</time></div>
-                    <a href="/2020/02/06/C-GettingStarted1/" class="has-link-black-ter is-size-6"></a>
+                    <a href="/2020/02/06/C-GettingStarted1/" class="has-link-black-ter is-size-6">C++GettingStarted1</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -998,7 +1042,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -1044,7 +1088,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1223,10 +1267,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
+                POSTS: 'Entradas',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
+                CATEGORIES: 'Categorias',
+                TAGS: 'Etiquetas',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',

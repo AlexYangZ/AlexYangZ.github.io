@@ -15,7 +15,7 @@
 <meta property="og:description" content="1.当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.g++ -o pro1 pro1.cc  alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28alexyang@bogon  ~/Desktop/C++Lea">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2020-02-08T16:29:18.094Z">
+<meta property="og:updated_time" content="2020-02-08T16:50:43.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++GettingStarted1">
 <meta name="twitter:description" content="1.当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.g++ -o pro1 pro1.cc  alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28alexyang@bogon  ~/Desktop/C++Lea">
@@ -150,7 +150,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 minutes read (About 760 words)
+                    6 minutes read (About 886 words)
                 </span>
                 
                 
@@ -229,7 +229,7 @@ int main()
     }
 
     return 0;
-}</code></pre><p>Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出<br>在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %</p>
+}</code></pre><p>Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出<br>在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %<br>上述方式非常完美的解决了不能保存只读文件的问题，但毕竟命令还是有些长，为了避免每次输入一长串的命令，可以将它映射为一个简单的命令加到 .vimrc 中：<br>“ Allow saving of files as sudo when I forgot to start vim using sudo.<br>cmap w!! w !sudo tee &gt; /dev/null %<br>这样，简单的运行:w!!即可。命令后半部分&gt; /dev/null作用为显式的丢掉标准输出的内容。</p>
 
         </div>
         

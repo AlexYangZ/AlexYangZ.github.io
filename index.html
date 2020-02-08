@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 minutes read (About 886 words)
+                    6 minutes read (About 888 words)
                 </span>
                 
                 
@@ -160,7 +160,7 @@
             
         </h1>
         <div class="content">
-            <p><strong>1.</strong>当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.<br>g++ -o pro1 pro1.cc</p>
+            <p><strong>一.</strong>当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.<br>g++ -o pro1 pro1.cc</p>
 <blockquote>
 <p>alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  462  22    :32:50<br> pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  cc pro1.cc          ✔  463  22    :33:06<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  464  22    :33:25<br>a.out   pro1.cc<br>alexyang@bogon  ~/Desktop/C++Learn  ./a.out             ✔  465  22    :33:31<br>alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  466  22    :34:13<br>0<br>alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  483  22:44:39<br>a.out   pro1    pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  484  22:45:14<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  485  22:45:34<br>0<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1            ✔  486  22:45:59<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  487  22:46:54</p>
 </blockquote>
@@ -183,8 +183,7 @@ Hello, World!
  alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  495  22:54:06
 Hello, World!
  alexyang@bogon  ~/Desktop/C++Learn  echo $?         255 ↵  496  22:54:21
-255</code></pre><p><strong>2.</strong></p>
-<h3 id="1-Writing-std-cout-uses-the-scope-operator-the-operator-to-say-that-we-want-to-use-the-name-cout-that-is-defined-in-the-namespace-std"><a href="#1-Writing-std-cout-uses-the-scope-operator-the-operator-to-say-that-we-want-to-use-the-name-cout-that-is-defined-in-the-namespace-std" class="headerlink" title="1.Writing std::cout uses the scope operator (the :: operator) to say that we want to use the name cout that is defined in the namespace std."></a>1.Writing std::cout uses the scope operator (the :: operator) to say that we want to use the name cout that is defined in the namespace std.</h3><h3 id="2-The-input-operator-the-gt-gt-operator-behaves-analogously-to-the-output-operator-Some-Words-asterisk-italicize-indent"><a href="#2-The-input-operator-the-gt-gt-operator-behaves-analogously-to-the-output-operator-Some-Words-asterisk-italicize-indent" class="headerlink" title="2.The input operator (the &gt;&gt; operator) behaves analogously to the output operator.  Some Words : asterisk italicize  indent"></a>2.The input operator (the &gt;&gt; operator) behaves analogously to the output operator.  Some Words : asterisk italicize  indent</h3><h3 id="3-Reading-an-Unkown-Number-of-Input"><a href="#3-Reading-an-Unkown-Number-of-Input" class="headerlink" title="3.Reading an Unkown Number of Input"></a>3.Reading an Unkown Number of Input</h3><pre><code>while (std::cin &gt;&gt; value)
+255</code></pre><h2 id="二"><a href="#二" class="headerlink" title="二."></a>二.</h2><h3 id="1-Writing-std-cout-uses-the-scope-operator-the-operator-to-say-that-we-want-to-use-the-name-cout-that-is-defined-in-the-namespace-std"><a href="#1-Writing-std-cout-uses-the-scope-operator-the-operator-to-say-that-we-want-to-use-the-name-cout-that-is-defined-in-the-namespace-std" class="headerlink" title="1.Writing std::cout uses the scope operator (the :: operator) to say that we want to use the name cout that is defined in the namespace std."></a>1.Writing std::cout uses the scope operator (the :: operator) to say that we want to use the name cout that is defined in the namespace std.</h3><h3 id="2-The-input-operator-the-gt-gt-operator-behaves-analogously-to-the-output-operator-Some-Words-asterisk-italicize-indent"><a href="#2-The-input-operator-the-gt-gt-operator-behaves-analogously-to-the-output-operator-Some-Words-asterisk-italicize-indent" class="headerlink" title="2.The input operator (the &gt;&gt; operator) behaves analogously to the output operator.  Some Words : asterisk italicize  indent"></a>2.The input operator (the &gt;&gt; operator) behaves analogously to the output operator.  Some Words : asterisk italicize  indent</h3><h3 id="3-Reading-an-Unkown-Number-of-Input"><a href="#3-Reading-an-Unkown-Number-of-Input" class="headerlink" title="3.Reading an Unkown Number of Input"></a>3.Reading an Unkown Number of Input</h3><pre><code>while (std::cin &gt;&gt; value)
 On Windows systems we enter an end-of-file by typing a control-z--hold down the Ctrl key and press z--followed by hittingeither the Enter or Return key. On UNIX systems, including on Mac OS X machines, end-of-file is usually control-d.</code></pre><h3 id="4-Headers-from-the-standard-library-are-enclosed-in-angle-brackets-lt-gt-Those-that-are-not-part-of-the-library-are-enclosed-in-double-quotes-“-“"><a href="#4-Headers-from-the-standard-library-are-enclosed-in-angle-brackets-lt-gt-Those-that-are-not-part-of-the-library-are-enclosed-in-double-quotes-“-“" class="headerlink" title="4.Headers from the standard library are enclosed in angle brackets (&lt; &gt;). Those that are not part of the library are enclosed in double quotes(“ “)."></a>4.Headers from the standard library are enclosed in angle brackets (&lt; &gt;). Those that are not part of the library are enclosed in double quotes(“ “).</h3><h3 id="5-Member-functions-are-sometimes-referred-to-as-methods"><a href="#5-Member-functions-are-sometimes-referred-to-as-methods" class="headerlink" title="5.Member functions are sometimes referred to as methods."></a>5.Member functions are sometimes referred to as methods.</h3><h3 id="6-addItems-outfile-Assuming-is-the-system-prompt-and-our-addition-program-has-been-compiled-into-an-executablefile-named-addItems-exe-or-addItems-on-UNIX-systems-this-command-will-read-transactions-from-a-file-named-infile-and-write-its-output-to-a-file-named-outfile-in-the-current-directory"><a href="#6-addItems-outfile-Assuming-is-the-system-prompt-and-our-addition-program-has-been-compiled-into-an-executablefile-named-addItems-exe-or-addItems-on-UNIX-systems-this-command-will-read-transactions-from-a-file-named-infile-and-write-its-output-to-a-file-named-outfile-in-the-current-directory" class="headerlink" title="6. $ addItems outfile    Assuming $ is the system prompt and our addition program has been compiled into an executablefile named addItems.exe(or addItems on UNIX systems), this command will read transactions from a file named infile and write its output to a file named outfile in the current directory."></a>6. $ addItems <infile>outfile    Assuming $ is the system prompt and our addition program has been compiled into an executablefile named addItems.exe(or addItems on UNIX systems), this command will read transactions from a file named infile and write its output to a file named outfile in the current directory.</infile></h3><pre><code>#include &lt;iostream&gt;
 #include &quot;Sales_item.h&quot;
 #include &lt;iostream&gt;
@@ -221,7 +220,10 @@ int main()
     }
 
     return 0;
-}</code></pre><h3 id="7-Vim多行缩进技巧-按v进入visual状态，选择多行，用-gt-或-lt-缩进或缩出"><a href="#7-Vim多行缩进技巧-按v进入visual状态，选择多行，用-gt-或-lt-缩进或缩出" class="headerlink" title="7.Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出"></a>7.Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出</h3><h3 id="8-在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：-w-sudo-tee"><a href="#8-在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：-w-sudo-tee" class="headerlink" title="8.在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %"></a>8.在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %</h3><p>上述方式非常完美的解决了不能保存只读文件的问题，但毕竟命令还是有些长，为了避免每次输入一长串的命令，可以将它映射为一个简单的命令加到 .vimrc 中：<br>“ Allow saving of files as sudo when I forgot to start vim using sudo.<br>cmap w!! w !sudo tee &gt; /dev/null %<br>这样，简单的运行:w!!即可。命令后半部分&gt; /dev/null作用为显式的丢掉标准输出的内容。</p>
+}</code></pre><h3 id="7-Vim多行缩进技巧-按v进入visual状态，选择多行，用-gt-或-lt-缩进或缩出"><a href="#7-Vim多行缩进技巧-按v进入visual状态，选择多行，用-gt-或-lt-缩进或缩出" class="headerlink" title="7.Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出"></a>7.Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出</h3><h3 id="8-在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：-w-sudo-tee"><a href="#8-在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：-w-sudo-tee" class="headerlink" title="8.在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %"></a>8.在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %</h3><p>上述方式非常完美的解决了不能保存只读文件的问题，但毕竟命令还是有些长，为了避免每次输入一长串的命令，可以将它映射为一个简单的命令加到 .vimrc 中：</p>
+<blockquote>
+<p>“ Allow saving of files as sudo when I forgot to start vim using sudo.<br>cmap w!! w !sudo tee &gt; /dev/null %<br>这样，简单的运行:w!!即可。命令后半部分&gt; /dev/null作用为显式的丢掉标准输出的内容。</p>
+</blockquote>
 
         </div>
         
@@ -620,7 +622,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Entradas
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
                         5
@@ -630,7 +632,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categorias
+                        Categories
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -640,7 +642,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Etiquetas
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -650,7 +652,7 @@ blog目录下
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
-                SEGUIR</a>
+                Follow</a>
         </div>
         
         
@@ -737,7 +739,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categorias
+                Categories
             </h3>
             <ul class="menu-list">
             
@@ -755,7 +757,7 @@ blog目录下
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
         
         <article class="media">
@@ -861,7 +863,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -907,7 +909,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -931,7 +933,7 @@ blog目录下
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
         
         <article class="media">
@@ -1037,7 +1039,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -1083,7 +1085,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1262,10 +1264,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Entradas',
+                POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categorias',
-                TAGS: 'Etiquetas',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',

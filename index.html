@@ -214,8 +214,7 @@ int main()
 
     return 0;
 }</code></pre><hr>
-<h3 id="7-vim小技巧"><a href="#7-vim小技巧" class="headerlink" title="7.vim小技巧:"></a>7.vim小技巧:</h3><pre><code>Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出
-在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %</code></pre><p>上述方式非常完美的解决了不能保存只读文件的问题，但毕竟命令还是有些长，为了避免每次输入一长串的命令，可以将它映射为一个简单的命令加到 .vimrc 中：</p>
+<h3 id="7-vim小技巧"><a href="#7-vim小技巧" class="headerlink" title="7.vim小技巧:"></a>7.vim小技巧:</h3><p>  Vim多行缩进技巧:按v进入visual状态，选择多行，用&gt;或&lt;缩进或缩出<br>  在使用vim时，当我们以普通用户去打开一个只有root用户才有权限操作的文件时，我们编辑完成之后，正要保存，却发现，这个文件我们没有权限修改。解决方案：底行命令模式执行：:w !sudo tee %<br>上述方式非常完美的解决了不能保存只读文件的问题，但毕竟命令还是有些长，为了避免每次输入一长串的命令，可以将它映射为一个简单的命令加到 .vimrc 中：</p>
 <blockquote>
 <p>“ Allow saving of files as sudo when I forgot to start vim using sudo.<br>cmap w!! w !sudo tee &gt; /dev/null %</p>
 </blockquote>
@@ -618,7 +617,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Entradas
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
                         5
@@ -628,7 +627,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categorias
+                        Categories
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -638,7 +637,7 @@ blog目录下
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Etiquetas
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
                         0
@@ -648,7 +647,7 @@ blog目录下
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
-                SEGUIR</a>
+                Follow</a>
         </div>
         
         
@@ -735,7 +734,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categorias
+                Categories
             </h3>
             <ul class="menu-list">
             
@@ -753,7 +752,7 @@ blog目录下
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
         
         <article class="media">
@@ -859,7 +858,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -905,7 +904,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -929,7 +928,7 @@ blog目录下
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
         
         <article class="media">
@@ -1035,7 +1034,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -1081,7 +1080,7 @@ blog目录下
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1260,10 +1259,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Entradas',
+                POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categorias',
-                TAGS: 'Etiquetas',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',

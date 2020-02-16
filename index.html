@@ -142,6 +142,94 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="default">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/16/新建本地仓库并将代码提交到远程仓库/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="AlexYangZ">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="STAY HUNGRY STAY FOOLISH">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/16/新建本地仓库并将代码提交到远程仓库/" class="post-title-link" itemprop="url">新建本地仓库并将代码提交到远程仓库</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-02-16 14:07:29 / Modified: 15:40:02" itemprop="dateCreated datePublished" datetime="2020-02-16T14:07:29+08:00">2020-02-16</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>##前提：在github上手动创建仓库image-store。</p>
+<p>p.s. : 需要先在github手动创建repo</p>
+<p>Create a new repository on the command line</p>
+<blockquote>
+<p>git init<br>git add README.md<br>git commit -m “first commit”<br>git remote add origin <a href="https://github.com/yourId/repoName.git" target="_blank" rel="noopener">https://github.com/yourId/repoName.git</a><br>git push -u origin master`</p>
+</blockquote>
+<p>Push an existing repository from the command line</p>
+<blockquote>
+<p>git remote add origin <a href="https://github.com/yourID/repoName.git" target="_blank" rel="noopener">https://github.com/yourID/repoName.git</a><br>git push -u origin master</p>
+</blockquote>
+<p>##将本地仓库提交至远程仓库</p>
+<p>在本地按照如下的命令进行</p>
+<p>1、 mkdir image-store#如果是已存在的工程项目，则直接cd到项目根目录下，不需要新建。</p>
+<p>2、 cd image-store</p>
+<p>3、 git init #初始化本地仓库</p>
+<p>4、 git add xxx #添加要push到远程仓库的文件或文件夹</p>
+<p>5、 git commit -m ‘first commit’</p>
+<p>6、 git remote add origin <a href="https://github.com/yourgithubID/image-store.git" target="_blank" rel="noopener">https://github.com/yourgithubID/image-store.git</a> #建立远程仓库</p>
+<p>7、 git push -u origin master #将本地仓库push到远程仓库</p>
+<p>需要注意的是：一定要在github上手动创建仓库image-store，否则会出现错误。</p>
+<p>在实践过程中，由于在github上手动创建的仓库包括：README.md文件，二本地仓库没有此文件，则在执行git push -u origin master命令时报如下的错误。<br><img src="https://github.com/AlexYangZ/image-store/raw/master/article1-remote-local-established/1.png%22first%22" alt="Oops.."></p>
+<p>###解决方案一:出现错误的主要原因是github中的README.md文件不在本地代码目录中,可以通过如下命令进行代码合并【注：pull=fetch+merge]</p>
+<p>git pull –rebase origin master</p>
+<p>执行上面代码后可以看到本地代码库中多了README.md文件<br><img src="https://github.com/AlexYangZ/image-store/raw/master/article1-remote-local-established/2.png%22second%22" alt="Oops.."></p>
+<p>第二步：此时再执行语句 git push -u origin master即可完成代码上传到github<br><img src="https://github.com/AlexYangZ/image-store/raw/master/article1-remote-local-established/3.png%22third%22" alt="Oops.."></p>
+<p>###解决方案二:</p>
+<p>1、git pull origin master –allow-unrelated-histories //把远程仓库和本地同步，消除差异</p>
+<p>2、重新add和commit相应文件</p>
+<p>3、git push origin master</p>
+<p>4、此时就能够上传成功了</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="default">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/06/C-GettingStarted1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -749,7 +837,7 @@ blog目录下
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

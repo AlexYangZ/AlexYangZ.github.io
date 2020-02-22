@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="STAY HUNGRY STAY FOOLISH">
 <meta property="og:description" content="一.当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.g++ -o pro1 pro1.cc  alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28alexyang@bogon  ~/Desktop/C++Lea">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-02-20T15:08:44.766Z">
+<meta property="og:updated_time" content="2020-02-22T09:19:28.366Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++GettingStarted1">
 <meta name="twitter:description" content="一.当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.g++ -o pro1 pro1.cc  alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28alexyang@bogon  ~/Desktop/C++Lea">
@@ -305,28 +305,10 @@
       
         <p><strong>一.</strong>当main函数return回的是-1时echo #?状态是255;当main函数return回的是0时echo #?状态是0.<br>g++ -o pro1 pro1.cc</p>
 <blockquote>
-<p>alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  462  22    :32:50<br> pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  cc pro1.cc          ✔  463  22    :33:06<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  464  22    :33:25<br>a.out   pro1.cc<br>alexyang@bogon  ~/Desktop/C++Learn  ./a.out             ✔  465  22    :33:31<br>alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  466  22    :34:13<br>0<br>alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  483  22:44:39<br>a.out   pro1    pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  484  22:45:14<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  485  22:45:34<br>0<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1            ✔  486  22:45:59<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  487  22:46:54</p>
+<p>alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  461  22:    30:28<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  462  22    :32:50<br> pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  cc pro1.cc          ✔  463  22    :33:06<br>alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  464  22    :33:25<br>a.out   pro1.cc<br>alexyang@bogon  ~/Desktop/C++Learn  ./a.out             ✔  465  22    :33:31<br>alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  466  22    :34:13<br>0<br>alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ls                  ✔  483  22:44:39<br>a.out   pro1    pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  484  22:45:14<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  485  22:45:34<br>0<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1            ✔  486  22:45:59<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  487  22:46:54<br>alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br>    pro1.cc:3:2: error: use of undeclared identifier ‘std’<br>     26         std::cout &lt;&lt; “Hello, World!”&lt;&lt; std::endl;<br>     27         ^<br>    pro1.cc:3:33: error: use of undeclared identifier ‘std’<br>        std::cout &lt;&lt; “Hello, World!”&lt;&lt; std::endl;<br>                           ^<br>    2 errors generated.<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc       1 ↵  489  22:50:23<br> alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  491  22:52:18<br>Hello, World!<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  492  22:52:26<br>0<br> alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  493  22:52:52<br> alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc<br> alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  495  22:54:06<br>Hello, World!<br> alexyang@bogon  ~/Desktop/C++Learn  echo $?         255 ↵  496  22:54:21<br>255</p>
 </blockquote>
-<pre><code>alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc
-pro1.cc:3:2: error: use of undeclared identifier &apos;std&apos;
- 26         std::cout &lt;&lt; &quot;Hello, World!&quot;&lt;&lt; std::endl;
- 27         ^
-pro1.cc:3:33: error: use of undeclared identifier &apos;std&apos;
-    std::cout &lt;&lt; &quot;Hello, World!&quot;&lt;&lt; std::endl;
-                       ^
-2 errors generated.
- alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc       1 ↵  489  22:50:23
- alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc
- alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  491  22:52:18
-Hello, World!
- alexyang@bogon  ~/Desktop/C++Learn  echo $?             ✔  492  22:52:26
-0
- alexyang@bogon  ~/Desktop/C++Learn  vim pro1.cc         ✔  493  22:52:52
- alexyang@bogon  ~/Desktop/C++Learn  g++ -o pro1 pro1.cc
- alexyang@bogon  ~/Desktop/C++Learn  ./pro1              ✔  495  22:54:06
-Hello, World!
- alexyang@bogon  ~/Desktop/C++Learn  echo $?         255 ↵  496  22:54:21
-255</code></pre><h2 id="二"><a href="#二" class="headerlink" title="二."></a>二.</h2><p>1.Writing std::cout uses the scope operator (the :: operator) to say that we want to use the name cout that is defined in the namespace std.<br>2.The input operator (the &gt;&gt; operator) behaves analogously to the output operator.  Some Words : asterisk italicize  indent<br>3.Reading an Unkown Number of Input<br>while (std::cin &gt;&gt; value)<br>On Windows systems we enter an end-of-file by typing a control-z–hold down the Ctrl key and press z–followed by hittingeither the Enter or Return key. On UNIX systems, including on Mac OS X machines, end-of-file is usually control-d.<br>4.Headers from the standard library are enclosed in angle brackets (&lt; &gt;). Those that are not part of the library are enclosed in double quotes(“ “).<br>5.Member functions are sometimes referred to as methods.</p>
+<a id="more"></a>
+<h2 id="二"><a href="#二" class="headerlink" title="二."></a>二.</h2><p>1.Writing std::cout uses the scope operator (the :: operator) to say that we want to use the name cout that is defined in the namespace std.<br>2.The input operator (the &gt;&gt; operator) behaves analogously to the output operator.  Some Words : asterisk italicize  indent<br>3.Reading an Unkown Number of Input<br>while (std::cin &gt;&gt; value)<br>On Windows systems we enter an end-of-file by typing a control-z–hold down the Ctrl key and press z–followed by hittingeither the Enter or Return key. On UNIX systems, including on Mac OS X machines, end-of-file is usually control-d.<br>4.Headers from the standard library are enclosed in angle brackets (&lt; &gt;). Those that are not part of the library are enclosed in double quotes(“ “).<br>5.Member functions are sometimes referred to as methods.</p>
 <ol start="6">
 <li><p>$ addItems <infile>outfile    Assuming $ is the system prompt and our addition program has been compiled into an executablefile named addItems.exe(or addItems on UNIX systems), this command will read transactions from a file named infile and write its output to a file named outfile in the current directory.</infile></p>
 <p> #include <iostream><br> #include “Sales_item.h”</iostream></p>
@@ -363,6 +345,7 @@ return 0;</code></pre><p> }</p>
 <p>“ Allow saving of files as sudo when I forgot to start vim using sudo.<br>cmap w!! w !sudo tee &gt; /dev/null %</p>
 </blockquote>
 <p>这样，简单的运行:w!!即可。命令后半部分&gt; /dev/null作用为显式的丢掉标准输出的内容。</p>
+<p>sh-3.2# mv Blog-Images/image-store/ ./  #将该文件夹移至和当前目录平级.</p>
 
       
     </div>
@@ -478,7 +461,7 @@ return 0;</code></pre><p> }</p>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

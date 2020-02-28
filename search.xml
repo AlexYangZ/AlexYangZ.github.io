@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git学习教程</title>
+    <title>学习Git-更好的利用Github</title>
     <url>/2020/02/24/%E5%AD%A6%E4%B9%A0Git-%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%88%A9%E7%94%A8Github/</url>
     <content><![CDATA[<p>Git是目前世界上先进的<strong>分布式版本控制系统</strong>（没有之⼀）。 不但能自动帮我记录每次文件的改动，还可以让同事协作编辑，这样就不用自己管理一堆类似的文件了，也不需要把文件传来传去。Linus花了两周时间自己用C写了一个分布式版本控制系统，这就是Git！一个月之内，Linux 系统的源码已经由Git管理了！Git迅速成为流⾏行的分布式版本控制系统，尤其是2008年，GitHub网站上线了，它为开源项目免费提供Git存储，无数开源项目开始迁移至GitHub，包括jQuery，PHP，Ruby等等。</p>
 <a id="more"></a>
@@ -407,6 +407,9 @@
 </ul>
 <p><a href="https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf" target="_blank" rel="noopener">https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf</a></p>
 ]]></content>
+      <tags>
+        <tag>生产力</tag>
+      </tags>
   </entry>
   <entry>
     <title>MAC-常用终端命令</title>
@@ -522,6 +525,9 @@
 <p><strong>一些常用技巧</strong></p>
 <p>所以你可以使用▲（上箭头）或▼（下箭头）来上下移动，使用　空格键 来翻页，输入/和关键字来按照关键字搜索按Q来退出使用指南页面tab按键自动补全唯一路径中止一个错误的或者发疯的命令，可以使用组合键control + C。你可以在执行前编辑命令，只需要使用箭头和键盘上的其他字母。没有输入任何命令时，你可以用▲和▼来浏览历史命令。同样可以编辑和再次执行。你也可以使用history命令查看历史记录。你可以使用组合键control + L清屏。<br>命令+N:打开一个新的窗口;命令+T:在一个新窗口中建立多个终端窗口.</p>
 ]]></content>
+      <tags>
+        <tag>生产力</tag>
+      </tags>
   </entry>
   <entry>
     <title>SUNSHINE-SMILE</title>
@@ -530,9 +536,12 @@
 <p>一五计划</p>
 <p>学历封顶.<br>有车有房.<br>2020年<br>1.每个月肯一部技术书籍的大部头,并写博客总结.<br>2.到4月底能够单独接项目做兼职.<br>3.做事有计划,事后有总结,及时复盘.<br>4.雅思考个较高的分数.<br>5.每天阅读一篇英文文章.<br>6.完美英音.<br>7.德语阅读文章无障碍.<br>8.每周更新技术博客.</p>
 ]]></content>
+      <tags>
+        <tag>个人计划</tag>
+      </tags>
   </entry>
   <entry>
-    <title>Shortcuts of Mac</title>
+    <title>Shortcuts-of-Mac</title>
     <url>/2020/02/20/Shortcuts-of-Mac/</url>
     <content><![CDATA[<hr>
 <p><img src="https://github.com/AlexYangZ/image-store/raw/master/Mac-shortcuts/Mac%20Keyboard.jpg" alt="Oops.." title="Lucky"><br>在Mac中快捷键的图形符号：</p>
@@ -736,6 +745,9 @@
 <li>Command+R 刷新页面</li>
 </ul>
 ]]></content>
+      <tags>
+        <tag>生产力</tag>
+      </tags>
   </entry>
   <entry>
     <title>新建本地仓库并将代码提交到远程仓库</title>
@@ -769,6 +781,9 @@
 <p>3、git push origin master</p>
 <p>4、此时就能够上传成功了</p>
 ]]></content>
+      <tags>
+        <tag>生产力</tag>
+      </tags>
   </entry>
   <entry>
     <title>C++GettingStarted1</title>
@@ -819,7 +834,7 @@ return 0;</code></pre><p> }</p>
 ]]></content>
   </entry>
   <entry>
-    <title>vim笔记</title>
+    <title>To-Be-a-Vimer</title>
     <url>/2020/01/25/To-Be-a-Vimer/</url>
     <content><![CDATA[<p>Visual(可视)模式<br>Visual模式一般用来块状选择文本<br>Normal模式下使用v进入visual选择<br>使用V选择行◆使用ctrl+v进行方块选择</p>
 <a id="more"></a>
@@ -951,15 +966,21 @@ return 0;</code></pre><p> }</p>
 <p>学习万法<br>熟练vim靠的是肌肉记忆。脱离鼠标编辑能提升编辑效率<br>◆虽然讲了这么多, vim仍然很多东西没有讲,时不时发现一些技巧◆在学中练,在练中学。熟能生巧,肌肉记忆<br>◆衡量投入产出比,是点到为止还是继续深入</p>
 <p>继续练级<br>网络.上很多vim的资源,甚至练习的小游戏◆《Practical vim》<br>◆《举方法学 vimscript》<br>◆学习和开发自己的插件</p>
 ]]></content>
+      <tags>
+        <tag>生产力</tag>
+      </tags>
   </entry>
   <entry>
-    <title>小笔记,小心得</title>
+    <title>小笔记-小心得</title>
     <url>/2020/01/16/%E5%B0%8F%E7%AC%94%E8%AE%B0-%E5%B0%8F%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<p>躬身入局<br>法国作家 加缪:<br>请不要跟在我后面,因为我可能不会引路;也不要走在我的前面因为我可能不会跟随;请走在我的旁边做我的朋友.</p>
 ]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
   </entry>
   <entry>
-    <title>Hexo Blog 搭建教程</title>
+    <title>Hexo-Blog-搭建</title>
     <url>/2019/12/30/Hexo-Blog-%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p><img src="/images/1.2.jpg" alt="Hexo"></p>
 
@@ -1009,5 +1030,8 @@ blog目录下
 
 配置-config.yml
 ![lovely](/images/1.11.jpg)</code></pre>]]></content>
+      <tags>
+        <tag>生产力</tag>
+      </tags>
   </entry>
 </search>

@@ -3,7 +3,7 @@
   <entry>
     <title>个人博客图床</title>
     <url>/2020/03/28/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h4 id="GitHub个人博客免费图床"><a href="#GitHub个人博客免费图床" class="headerlink" title="GitHub个人博客免费图床"></a>GitHub个人博客免费图床</h4><p>[x] 方法一:在GitHub上创建一个专门用于存储图片的public仓库.</p>
+    <content><![CDATA[<h4 id="GitHub个人博客免费图床"><a href="#GitHub个人博客免费图床" class="headerlink" title="GitHub个人博客免费图床"></a>GitHub个人博客免费图床</h4><p> [x] 方法一:在GitHub上创建一个专门用于存储图片的public仓库.</p>
 <p>将创建好的空白仓库clone到本地.</p>
 <p>分目录地将需要托管到Github上的图片放到相应目录下.</p>
 <p>通过git add, git commit. git push.等命令将本地仓库推送至GitHub上托管即可</p>

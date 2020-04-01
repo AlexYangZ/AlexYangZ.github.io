@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-29T03:03:37.883Z</updated>
+  <updated>2020-03-29T03:44:39.100Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,16 @@
     <link href="http://yoursite.com/2020/03/28/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/"/>
     <id>http://yoursite.com/2020/03/28/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/</id>
     <published>2020-03-28T15:29:27.000Z</published>
-    <updated>2020-03-29T03:03:37.883Z</updated>
+    <updated>2020-03-29T03:44:39.100Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="GitHub个人博客免费图床"><a href="#GitHub个人博客免费图床" class="headerlink" title="GitHub个人博客免费图床"></a>GitHub个人博客免费图床</h4><ul><li><input checked disabled type="checkbox"> 方法一:在GitHub上创建一个专门用于存储图片的public仓库.</li></ul><p>将创建好的空白仓库clone到本地.</p><p>分目录地将需要托管到Github上的图片放到相应目录下.</p><p>通过git add, git commit. git push.等命令将本地仓库推送至GitHub上托管即可</p><p>通过网页浏览图片复制图片URL地址,并将其中的blob替换为raw即成为markdown中可引用的图片外链.</p><p>手动写个自动化脚本替代每次的手动敲命令.</p><p>图片上传自动化工具PicGo</p><ul><li><input checked disabled type="checkbox"> 方法二:利用GitHub的issue开源项目的交流评论区.</li></ul><p>创建一个新的issue,将图片直接拖至issue框后,会返回一个图片外链地址.</p><ul><li><input checked disabled type="checkbox"> 方法三:利用GitHub的Wiki功能,同方法二.</li></ul><p>任务列表添加方法-空格[空格]空格 &lt;<a href="https://space.bilibili.com/384068749/article" target="_blank" rel="noopener">https://space.bilibili.com/384068749/article</a></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="GitHub个人博客免费图床"><a href="#GitHub个人博客免费图床" class="headerlink" title="GitHub个人博客免费图床"></a>GitHub个人博客免费图床</h4><ul><li><input checked disabled type="checkbox"> 方法一:在GitHub上创建一个专门用于存储图片的public仓库.</li></ul><p>将创建好的空白仓库clone到本地.</p><a id="more"></a><p>分目录地将需要托管到Github上的图片放到相应目录下.</p><p>通过git add, git commit. git push.等命令将本地仓库推送至GitHub上托管即可</p><p>通过网页浏览图片复制图片URL地址,并将其中的blob替换为raw即成为markdown中可引用的图片外链.</p><p>手动写个自动化脚本替代每次的手动敲命令.</p><p>图片上传自动化工具PicGo</p><ul><li><input checked disabled type="checkbox"> 方法二:利用GitHub的issue开源项目的交流评论区.</li></ul><p>创建一个新的issue,将图片直接拖至issue框后,会返回一个图片外链地址.</p><ul><li><input checked disabled type="checkbox"> 方法三:利用GitHub的Wiki功能,同方法二.</li></ul><p>任务列表添加方法-空格[空格]空格 &lt;<a href="https://space.bilibili.com/384068749/article" target="_blank" rel="noopener">https://space.bilibili.com/384068749/article</a><br>Typora编辑器————书写即为美学<a href="https://baka943.coding.me/2018/02/08/2018-02-08-TyporaSimpleDoc/" target="_blank" rel="noopener">https://baka943.coding.me/2018/02/08/2018-02-08-TyporaSimpleDoc/</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h4 id=&quot;GitHub个人博客免费图床&quot;&gt;&lt;a href=&quot;#GitHub个人博客免费图床&quot; class=&quot;headerlink&quot; title=&quot;GitHub个人博客免费图床&quot;&gt;&lt;/a&gt;GitHub个人博客免费图床&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;input checked d
-      
+      &lt;h4 id=&quot;GitHub个人博客免费图床&quot;&gt;&lt;a href=&quot;#GitHub个人博客免费图床&quot; class=&quot;headerlink&quot; title=&quot;GitHub个人博客免费图床&quot;&gt;&lt;/a&gt;GitHub个人博客免费图床&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input checked disabled type=&quot;checkbox&quot;&gt; 方法一:在GitHub上创建一个专门用于存储图片的public仓库.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将创建好的空白仓库clone到本地.&lt;/p&gt;
     
     </summary>
     

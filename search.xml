@@ -7,6 +7,7 @@
 <li><input checked disabled type="checkbox"> 方法一:在GitHub上创建一个专门用于存储图片的public仓库.</li>
 </ul>
 <p>将创建好的空白仓库clone到本地.</p>
+<a id="more"></a>
 <p>分目录地将需要托管到Github上的图片放到相应目录下.</p>
 <p>通过git add, git commit. git push.等命令将本地仓库推送至GitHub上托管即可</p>
 <p>通过网页浏览图片复制图片URL地址,并将其中的blob替换为raw即成为markdown中可引用的图片外链.</p>
@@ -19,7 +20,7 @@
 <ul>
 <li><input checked disabled type="checkbox"> 方法三:利用GitHub的Wiki功能,同方法二.</li>
 </ul>
-<p>任务列表添加方法-空格[空格]空格 &lt;<a href="https://space.bilibili.com/384068749/article" target="_blank" rel="noopener">https://space.bilibili.com/384068749/article</a></p>
+<p>任务列表添加方法-空格[空格]空格 &lt;<a href="https://space.bilibili.com/384068749/article" target="_blank" rel="noopener">https://space.bilibili.com/384068749/article</a><br>Typora编辑器————书写即为美学<a href="https://baka943.coding.me/2018/02/08/2018-02-08-TyporaSimpleDoc/" target="_blank" rel="noopener">https://baka943.coding.me/2018/02/08/2018-02-08-TyporaSimpleDoc/</a></p>
 ]]></content>
   </entry>
   <entry>

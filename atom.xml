@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-27T14:24:30.912Z</updated>
+  <updated>2020-06-14T03:11:06.829Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VIM adventure知识点</title>
+    <link href="http://yoursite.com/2020/06/14/VIM-adventure%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>http://yoursite.com/2020/06/14/VIM-adventure%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
+    <published>2020-06-14T03:02:17.000Z</published>
+    <updated>2020-06-14T03:11:06.829Z</updated>
+    
+    <content type="html"><![CDATA[<p>w 光标向前移动到下个单词首字母<br>e 光标向前移动到单词尾字母<br>b 光标向后移动到单词首字母<br>B 光标向后移动到字符串首<br>x 删除字符串<br>W 跳转到下一个字符串的首字母 （对应英文单词Word）<br>E 跳转到下一个字符串的尾字母 （对应英文单词End）<br>r 更改一个字符 （对应英文单词Replace）<br>关于W、E与w、e的区别，可以参考B与b的区别。<br>dl 与x功能一样，删除光标下一个字符，相当于键盘上的Del； dh 与之相反，功能相当于键盘上的backspace<br>dw、de、dW、dE 均为向后删除一个单词或字符串，区别在于de/dE是从当前位置到单词或字符串末尾，而dw/dW是删除当前位置到下一个单词或字符串之前<br>db、dB 向前删除一个单词或字符串。需要注意的是光标下的字符不删除<br>dk、dj 分别是向上和向下删除两行<br>dd 删除本行</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;w 光标向前移动到下个单词首字母&lt;br&gt;e 光标向前移动到单词尾字母&lt;br&gt;b 光标向后移动到单词首字母&lt;br&gt;B 光标向后移动到字符串首&lt;br&gt;x 删除字符串&lt;br&gt;W 跳转到下一个字符串的首字母 （对应英文单词Word）&lt;br&gt;E 跳转到下一个字符串的尾字母 （对应英文
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>几个常用的法则</title>

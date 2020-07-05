@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>服务器软件</title>
+    <url>/2020/07/05/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<p>静态服务：主要提供静态资源，不同用户访问到的资源相同<br>动态服务：提供动态服务，不同用户访问到的资源不同<br>服务器的几个叫法：<br>web服务器：广义上来说，就是响应用户的需求，提供服务，当下所有的服务器软件都可以称之为web服务器软件<br>HTTP服务器(静态服务)：使用HTTP协议传输资源，提供服务<br>应用服务器(动态服务)：一个特定应用的承载容器<br>常见的轻量级服务器软件：<br>1、Nginx：典型的静态服务器，可做反向代理、负载均衡，一般放在最前面直面用户，和后端Tomcat打配合；纯C写的，性能贼高、内存消耗极少、稳定性也相当好，互联网公司重度使用<br>2、Tengine：阿里出品，基于Nginx服务器做的改造(加强和封装)，对大流量场景做了很多高级功能，性能、稳定性优秀<br>4、Apache http server：也是静态服务器，但是不如Nginx<br>5、IIS：微软开发，只能用在Windows下，具有应用服务器能力的http服务器<br>6、Tomcat：Apache出品，典型的应用服务器软件，符合Servlet标准的应用容器，也可以提供http服务，但一般不会作为http服务器；是Spring Boot框架默认的内置服务器<br>7、Jetty：跟Tomcat是一个性质的东西，符合Servlet标准的应用容器，也是Spring Boot框架支持的服务器，但不是默认的<br>8、Undertow：红帽子出品，跟Tomcat、Jetty一样也是Spring Boot框架支持的服务器，但不是默认的；高并发时性能优于Tomcat、Jetty<br>几款商用重量级的服务器软件：<br>1、JBoss(从8版开始更名为WildFly)：不仅是Servlet应用容器，更是EJB的应用容器，整套JavaEE框架部署的解决方案<br>2、WebLogic：Oracle公司出品，用于部署企业级JavaEE应用，全能型，几乎支持JavaEE所有的应用规范<br>3、WebSphere：IBM公司出品，支持更多JavaEE的应用规范的综合应用服务器</p>
+]]></content>
+  </entry>
+  <entry>
     <title>VIM adventure知识点</title>
     <url>/2020/06/14/VIM-adventure%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
     <content><![CDATA[<p>w 光标向前移动到下个单词首字母<br>e 光标向前移动到单词尾字母<br>b 光标向后移动到单词首字母<br>B 光标向后移动到字符串首<br>x 删除字符串<br>W 跳转到下一个字符串的首字母 （对应英文单词Word）<br>E 跳转到下一个字符串的尾字母 （对应英文单词End）<br>r 更改一个字符 （对应英文单词Replace）<br>关于W、E与w、e的区别，可以参考B与b的区别。<br>dl 与x功能一样，删除光标下一个字符，相当于键盘上的Del； dh 与之相反，功能相当于键盘上的backspace<br>dw、de、dW、dE 均为向后删除一个单词或字符串，区别在于de/dE是从当前位置到单词或字符串末尾，而dw/dW是删除当前位置到下一个单词或字符串之前<br>db、dB 向前删除一个单词或字符串。需要注意的是光标下的字符不删除<br>dk、dj 分别是向上和向下删除两行<br>dd 删除本行</p>
